@@ -6,11 +6,11 @@
 /****** Start Style Main ******/
 
 .color-main {
-    color: #FF8B38;
+    color: #2CCC6F; /* #FF8B38; */
 }
 
 .bg-main {
-    background-color: #FF8B38;
+    background-color: #2CCC6F; /* #FF8B38; */
 }
 
 .color-second {
@@ -33,19 +33,27 @@
     background-color: #333333;
 }
 
+.pointer {
+    cursor: pointer
+}
+
 /****** End Style Main ******/
 
 
 /***** Start override Bootstrap  *****/
 
 .bg-light {
-    background-color: #f2f2f2!important;
+    background-color: #f2f2f2 !important;
 }
 
 .w-60 {
-    width: 60%!important;
+    width: 60% !important;
 }
+
 /* Start NavBar */
+.w-80 {
+    width: 80% !important;
+}
 
 .navbar {
     padding: .3rem 1rem;
@@ -62,7 +70,7 @@
 
 .navbar .navbar-brand h3 span {
     font-weight: 100;
-    color: #ff9b51;
+    color: #2CCC6F; /* #FF8B38; */
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -74,6 +82,16 @@
     background-color: rgba(0, 0, 0, .2);
 }
 
+.btn-outline-success {
+    color: #2CCC6F;
+    border-color: #2CCC6F;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #2CCC6F;
+    border-color: #2CCC6F;
+}
 
 /* End NavBar */
 
@@ -84,15 +102,7 @@
 /***** Start Header *****/
 
 header {
-    padding-top: 50px;
-}
-
-.bg-img .container {
-    margin-top: 50px;
-}
-
-header .bg-img .bg-layer .container {
-    padding-top: 100px;
+    margin-top: 52px;
 }
 
 header h1 {
@@ -104,27 +114,20 @@ header h1 span {
 }
 
 .bg-img {
-    height: 100vh;
-    background-image: url("../imgs/2.jpg");
-    position: relative;
-    /* Used if the image is unavailable */
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
+    background: url("../imgs/2.jpg") no-repeat top center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    /* Resize the background image to cover the entire container */
+
 }
 
 .bg-lay {
-    position: absolute;
     background-color: rgba(2, 2, 2, 0.68);
-    height: 100%;
-    width: 100%;
 }
 
 .bg-img .container h1 span {
-    color: #ff9b51;
+    color: #2CCC6F; /* #FF8B38; */
 }
 
 .bg-img .container hr {
@@ -136,7 +139,7 @@ header h1 span {
 
 .header-p {
     font-family: revert;
-    color: #8e9092!important;
+    color: #8e9092 !important;
 }
 
 header button {
@@ -160,6 +163,10 @@ form .form-group .form-control {
     color: #212529;
 }
 
+#btn-header :hover {
+    color: #2CCC6F;
+    border: 1px solid #2CCC6F;
+}
 
 /***** End Header *****/
 
@@ -198,32 +205,59 @@ form .form-group .form-control {
     color: darkblue;
 }
 
+@media (max-width: 768px) {
+
+}
 
 /***** End Social Media *****/
 
 
 /***** Start Table *****/
 
+@media (max-width: 768px) {
+    .tables ul li {
+        display: inline-block;
+        border: none;
+        margin-right: -5px;
+        border-left: 1.5px solid;
+        padding-left: 1.7rem !important;
+        padding-right: 1.7rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 1.9rem !important;
+    }
+
+    .w-60 {
+        width: auto !important;
+    }
+}
 
 .tables ul li.active,
-.tables ul li:hover{
-    background-color : #ff8b38;
+.tables ul li:hover {
+    background-color: #2CCC6F; /* #FF8B38; */
+}
+
+
+#btn-A:hover,
+#btn-B:hover,
+#btn-C:hover {
+    background-color: #333333 !important;
 }
 
 /***** End Table *****/
 
 /***** Start Sub list section ******/
-.ligne{
+.ligne {
     height: 1.2px;
 }
 
-.circle{
+.circle {
     border-radius: 50%;
-    border: 3px solid #ff8b38;
+    border: 3px solid #2CCC6F; /* #FF8B38; */
     width: 60px;
     height: 60px;
 }
-.sub-list-img{
+
+.sub-list-img {
     width: 70%;
     height: 70%;
 }
@@ -232,4 +266,118 @@ form .form-group .form-control {
 /****** End Sub list section ******/
 
 
+/***** Start why this is awesome section ******/
+.awesome .card .more-info-arrow {
+    transition: all ease-in-out 0.2s;
+
+}
+
+.awesome .card .more-info {
+    transition: all ease-in-out 0.2s;
+}
+
+.awesome .card:hover .more-info-arrow {
+    background-color: #f2f2f2 !important;
+    color: black !important;
+    cursor: pointer;
+}
+
+.awesome .card:hover .more-info {
+    background-color: #2CCC6F !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+/****** End why this is awesome section ******/
+
+
+/****** Start images section ******/
+.img-1 {
+    background-size: cover;
+    width: 340px;
+    height: 340px;
+}
+
+.img-1:nth-child(1) {
+
+    background-image: url("../imgs/city-7.jpg");
+
+}
+
+.img-1:nth-child(2) {
+
+    background-image: url("../imgs/city-2.jpg")
+
+}
+
+.img-1:nth-child(3) {
+
+    background-image: url("../imgs/city-3.jpg")
+
+}
+
+.img-1:nth-child(4) {
+
+    background-image: url("../imgs/city-4.jpg")
+
+}
+
+.img-1:nth-child(5) {
+
+    background-image: url("../imgs/city-5.jpg")
+
+}
+
+.img-1:nth-child(6) {
+
+    background-image: url("../imgs/city-6.jpg")
+
+}
+
+.img-1:nth-child(7) {
+
+    background-image: url("../imgs/city-7.jpg")
+
+}
+
+.img-1:nth-child(8) {
+    background-image: url("../imgs/city-8.jpg")
+
+}
+
+.images .row .col-3 .overlay {
+    position: absolute;
+    background-color: rgb(19 47 31 /90%);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    /*visibility: hidden;*/
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out
+}
+
+.images .row .col-3 .overlay .overlay-content {
+    margin-left: 20px;
+    margin-right: auto;
+
+}
+
+.overlay-content hr {
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 2px solid #2CCC6F;
+
+}
+
+/****** End images section ******/
 
