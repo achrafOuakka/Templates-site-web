@@ -19,5 +19,16 @@
         }
     );
     /***** End why this is awesome section ******/
+    $( ".saying .card" ).hover(
+        function() {
+            $(this).removeClass('border-bottom');
+            $(this).addClass('border-bottom-card').css('cursor', 'pointer');
+        }, function() {
+            $(this).addClass('border-bottom');
+            $(this).removeClass('border-bottom-card');
+        }
+    );
+    /****** Start saying section ******/
 
+    /***** footer ******/
     $(".year").text(new Date().getFullYear());

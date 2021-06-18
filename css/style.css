@@ -176,31 +176,35 @@ form .form-group .form-control {
 .social-media h4 {
     font-weight: bolder;
 }
-
+.footer .fa-facebook:hover,
 .social-media .fa-facebook:hover {
     color: darkblue;
 }
-
+.footer .fa-twitter:hover,
 .social-media .fa-twitter:hover {
     color: darkcyan;
 }
-
+.footer .fa-google-plus:hover,
 .social-media .fa-google-plus:hover {
     color: darkgreen;
 }
 
+.footer .fa-instagram:hover,
 .social-media .fa-instagram:hover {
     color: darkred;
 }
 
+.footer .fa-pinterest:hover,
 .social-media .fa-pinterest:hover {
     color: darkmagenta;
 }
 
+.footer.fa-stumbleupon:hover
 .social-media .fa-stumbleupon:hover {
     color: firebrick;
 }
 
+.footer .fa-rss:hover,
 .social-media .fa-rss:hover {
     color: darkblue;
 }
@@ -300,7 +304,7 @@ form .form-group .form-control {
 
 .img-1:nth-child(1) {
 
-    background-image: url("../imgs/city-7.jpg");
+    background-image: url("../imgs/city-1.jpg");
 
 }
 
@@ -347,7 +351,8 @@ form .form-group .form-control {
 
 .images .row .col-3 .overlay {
     position: absolute;
-    background-color: rgb(19 47 31 /90%);
+    background: linear-gradient(42deg
+            ,rgb(58 161 71/80%)0%,rgb(62 175 85 / 80%)0%,rgb(40 142 107 / 80%)100%,rgb(39 142 106 / 80%)100%);
     color: #fff;
     width: 100%;
     height: 100%;
@@ -355,13 +360,17 @@ form .form-group .form-control {
     top: 0;
     left: 0;
     display: flex;
-    /*visibility: hidden;*/
+    visibility: hidden;
     align-items: center;
     justify-content: center;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out
+}
+.images .row .col-3:hover .overlay{
+    visibility:visible;
+    cursor: pointer
 }
 
 .images .row .col-3 .overlay .overlay-content {
@@ -381,3 +390,39 @@ form .form-group .form-control {
 
 /****** End images section ******/
 
+/****** Start saying section ******/
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 18px solid#f2f2f2 !important;
+    margin-left: 16px;
+}
+
+.prof-img{
+    height: 60px;
+}
+
+.border-bottom-card{
+    border-bottom: 3px solid #2CCC6F !important;
+}
+
+
+/****** End saying section ******/
+
+
+/****** End contact section ******/
+
+.message-h{
+    height: 146px !important;
+}
+.border-bottom-input {
+    border-bottom: 1px solid #2CCC6F !important;
+}
+
+#btn-contact:hover {
+    background-color: #212529 !important;
+}
+/****** End contact section ******/
