@@ -2,5 +2,5 @@
 A simple Template for demonstration purpose.
 
 # Live Demo
-Github Page : https://el-capita-no.github.io/golden/
+Github Page : https://achrafouakka.github.io/Templates-site-web/
 
